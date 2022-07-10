@@ -8,7 +8,6 @@ import "./App.css";
 class App extends Component {
   state = {
     dishes: [],
-    cuisine: [],
     sortColumn: { path: "title", order: "asc" },
   };
 
@@ -41,12 +40,14 @@ class App extends Component {
     return (
       <div>
         <h1>Dishes you may like!</h1>
-        <DishesTable
-          dishes={dishes}
-          sortColumn={sortColumn}
-          onLike={this.handleLike}
-          onSort={this.handleSort}
-        ></DishesTable>
+        <div className='container'>
+          <DishesTable
+            dishes={dishes}
+            sortColumn={sortColumn}
+            onLike={this.handleLike}
+            onSort={this.handleSort}
+          ></DishesTable>
+        </div>
         <i className='fa-solid fa-utensils'></i>
       </div>
     );

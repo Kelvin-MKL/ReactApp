@@ -5,7 +5,7 @@ const dishes = [
     cuisine: { _id: "c01", name: "Japanese" },
     price: 6,
     starRating: 2.5,
-    favourite: true,
+    liked: true,
   },
   {
     _id: "002",
