@@ -7,7 +7,7 @@ class DishesTable extends Component {
     { path: "name", label: "Meal" },
     { path: "cuisine.name", label: "Cuisine" },
     { path: "price", label: "Price" },
-    { path: "starRating", label: "Star Rating" },
+    { path: "restaurant", label: "Restaurant" },
     {
       key: "favourite",
       content: (dish) => (
