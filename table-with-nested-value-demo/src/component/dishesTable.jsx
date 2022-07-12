@@ -3,6 +3,7 @@ import Like from "./common/like";
 import Table from "./common/table";
 
 class DishesTable extends Component {
+  // columns.path needs to be as same as the property in the backend (database / REST endpoint)
   columns = [
     { path: "name", label: "Meal" },
     { path: "cuisine.name", label: "Cuisine" },
